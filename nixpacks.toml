@@ -1,8 +1,5 @@
 [phases.setup]
 providers = ["python"]
 
-[phases.build]
-build = "pip install -r requirements.txt"
-
 [start]
 cmd = "gunicorn app:app"
