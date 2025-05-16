@@ -1,4 +1,8 @@
-#nixpacks.toml
+[phases.setup]
+providers = ["python"]
+
+[phases.build]
+build = "pip install -r requirements.txt"
 
 [start]
-cmd="gunicorn app:app"
+cmd = "gunicorn app:app"
